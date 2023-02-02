@@ -1,30 +1,26 @@
 # Foodify App
 
+## Table of Contents
 
-## Table of Contents 
+- [Description](#description)
+- [Features](features0)
+- [Links](#links)
+- [Wireframing](#wireframing)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Credits](#credits)
+- [References](#refernces)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
 
-
-* [Description](#description)
-* [Features](features0)
-* [Links](#links)
-* [Wireframing](#wireframing)
-* [Usage](#usage)
-* [Screenshots](#screenshots)
-* [Credits](#credits)
-* [References](#refernces)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-## Description 
+## Description
 
 Using Spoonacular Api and the calorie ninja api we create an app that allows a user to........
-
 
 ## Features
 
 Placeholder for us to add features the app will include
-
-
 
 ## Links
 
@@ -35,9 +31,11 @@ To view the code repository for the deployed application please use the followin
 ## Wireframing
 
 placeholder to add wireframing images and explanantion of app development
-## Usage 
+
+## Usage
 
 Placeholder to allow us to describe how to use the app here
+
 ```
 ## Screenshots
 placeholder location for screenshots to be added
@@ -47,7 +45,8 @@ Abby Egbo.
 Andrei Grigoras.
 Ian Millichamp
 ## References
-The following is a list of reference materials used in development of the application:
+The following is a list of reference materials used in development of the application:\
+*https://getbootstrap.com/ - Bootstrap CSS Framework documentation.
 *https://spoonacular.com/food-api - Spoonacular API documentation.
 *https://calorieninjas.com/api - Calorie Ninja API documentation.
 ## License
@@ -77,3 +76,4 @@ If you created an application or package and would like other developers to cont
 placeholder area to put some info about tests we have carried out on the app
 ---
 
+```
