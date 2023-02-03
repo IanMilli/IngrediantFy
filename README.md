@@ -1,5 +1,10 @@
 # Foodify App
 
+The App allows users to type in the ingredients they have in the fridge. It then provides a suggestion about recipes they can make with the available ingredients. 
+For example, if a user types in Spaghetti, prawns, red peppers, onions, it will produce a dish of ‘pasta with shrimp and Bell peppers or  Roasted Red Peppers and Herbs.  
+The App also enables users to type in the name a dish. This will then produce full ingredients of the dish along with its calories contents. 
+
+
 ## Table of Contents
 
 - [Description](#description)
