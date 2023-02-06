@@ -1,7 +1,21 @@
+body {
+    background-color: #f5f7fa;
+  }
 
+/* This is for the hero background */
 .bg-image {
     background-image: url('../images/hero.jpg');
     background-size: cover;
     height: 35vh;
 }
 
+.cnt-card{
+  border-radius: 50px;
+}
+
+
+/* This creates a scroll bar which includes LOADS of data structured in a nice box */
+.card-text {
+  height: 10em;
+  overflow: auto;
+}
