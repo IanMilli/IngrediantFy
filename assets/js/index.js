@@ -1,5 +1,6 @@
 
 
+
 /**api keys for use with the application */
 let spoonacularApiKey = "9575d7b24ee042eabce68a8f0dd4cec7"
 let calorieNinjaApiKey = "bpGUOf+/ZIm6T5zzOTafCw==kaTMpUEumQBV1CvA"
@@ -29,13 +30,15 @@ let cardArea = document.querySelector("#card-placeholder")
 // .then(response => response.json())
 // .then(data => console.log(data))
 
-//HERE IS CODE BY ANDREI
 
 
+/** allows search history buttonds to display in search history bar - Ian */
+window.onload = renderSearchHistory()
 
     function getIngredient() {
         
-       
+        
+       //HERE IS CODE BY ANDREI
         fetch("https://api.spoonacular.com/recipes/complexSearch?query=" + inputArea.value + "&apiKey=9575d7b24ee042eabce68a8f0dd4cec7&includeNutrition=true&addRecipeNutrition=true&addRecipeInformation=true&number=5")
             .then(response => response.json())
             .then(data => {
