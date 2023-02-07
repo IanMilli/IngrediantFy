@@ -197,7 +197,7 @@ function renderSearchHistory() {
         const historyItem = document.createElement("input");
         historyItem.setAttribute("type", "button");
         historyItem.setAttribute("readonly", true);
-        historyItem.setAttribute("class", "rounded-2 column historyBut bg-primary mt-2 text-center text-light responsive-content");
+        historyItem.setAttribute("class", "rounded-2  historyBut bg-primary mt-2 text-center text-light responsive-content");
         historyItem.setAttribute("value", searchHistory[i]);
         historyItem.addEventListener("click", function () {
             getIngredient(historyItem.value);
