@@ -1,7 +1,5 @@
 body {
-  background-image: url('../images/body\ background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+background-color: white;
   }
 
 /* This is for the hero background */
@@ -21,7 +19,15 @@ body {
   height: 10em;
   overflow: auto;
 }
-
+/*search history buttons*/
+.historyBut {
+ width: 20vh;
+ margin: 1vm;
+}
+/* code by andrei for the footer styling*/
+#copyright-link{
+  background-color: rgba(0, 0, 0, 0.2);
+}
 /* Buttons arranged in column on xs devices */
 @media screen and (max-width: 576px) {
   .btn, .responsive-content {

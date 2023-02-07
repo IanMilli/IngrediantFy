@@ -32,9 +32,9 @@ let cardArea = document.querySelector("#card-placeholder")
 
 
 
-/** allows search history buttonds to display in search history bar - Ian */
+/**allows retention of search history -Ian*/
 window.onload = renderSearchHistory()
-
+/**function to wrap around api enquiry to aid in functions that run the search button etc- moved onclick search button code to bottom of page */
     function getIngredient() {
         
         
@@ -169,10 +169,10 @@ window.onload = renderSearchHistory()
   
 
 //code added by Ian
-/* create a event listener for when the user clicks on the search  button*/
+/* create a event listener for when the user clicks on the search  button - event listener created by Andrei, moved here by Ian*/
 searchButton.addEventListener("click", function (event) {
 //this clears the old input - andrei
-        // cardArea.innerHTML = ""
+         cardArea.innerHTML = ""
         event.preventDefault();
     let searchTerm = ingredientEl.value;
     getIngredient(searchTerm);
@@ -197,7 +197,7 @@ function renderSearchHistory() {
         const historyItem = document.createElement("input");
         historyItem.setAttribute("type", "button");
         historyItem.setAttribute("readonly", true);
-        historyItem.setAttribute("class", "rounded-5 btn-lg bg-primary ml-2 text-center text-light responsive-content");
+        historyItem.setAttribute("class", "rounded-2 column historyBut bg-primary mt-2 text-center text-light responsive-content");
         historyItem.setAttribute("value", searchHistory[i]);
         historyItem.addEventListener("click", function () {
             getIngredient(historyItem.value);
