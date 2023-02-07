@@ -19,3 +19,32 @@ body {
   height: 10em;
   overflow: auto;
 }
+
+#Broc-image {
+  padding-top:10%;
+  width: 20em; 
+  height:20em; 
+  padding-bottom:10%;
+
+}
+
+#Avocado-img{
+  padding-top:10%;
+  width: 20em; 
+  height:20em; 
+  padding-bottom:10%;
+}
+
+
+.container{
+
+font-size: 25px;
+color: green;
+
+}
+
+.h3{ 
+text-align: left;
+
+}
+

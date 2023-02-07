@@ -49,11 +49,17 @@ Application Authors:
 Abby Egbo.
 Andrei Grigoras.
 Ian Millichamp
+
+
 ## References
+
 The following is a list of reference materials used in development of the application:\
 *https://getbootstrap.com/ - Bootstrap CSS Framework documentation.
 *https://spoonacular.com/food-api - Spoonacular API documentation.
 *https://calorieninjas.com/api - Calorie Ninja API documentation.
+
+
+
 ## License
 MIT License
 Copyright (c) 2023 IanMilli
