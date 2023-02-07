@@ -190,7 +190,7 @@ function renderSearchHistory() {
         const historyItem = document.createElement("input");
         historyItem.setAttribute("type", "button");
         historyItem.setAttribute("readonly", true);
-        historyItem.setAttribute("class", "form-control row bg-light ml-1 text-dark text-center responsive-content");
+        historyItem.setAttribute("class", "rounded bg-primary ml-1 text-center text-light responsive-content");
         historyItem.setAttribute("value", searchHistory[i]);
         historyItem.addEventListener("click", function () {
             getWeather(historyItem.value);
