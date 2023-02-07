@@ -18,10 +18,10 @@
                 <div class="text-white">
                     <h1 class="mb-3">Fancy a new dish?</h1>
                     <h4 class="mb-3">Type in below your desired food and we will make it work!</h4>
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-3" id="inputIngredient">
                         <input type="text" class="form-control" placeholder="Something delicious">
                         <div class="input-group-append">
-                          <button id="search" class="btn btn-success" type="submit">Search</button>
+                          <button id="search" class=" btn btn-success searchBtn" type="submit">Search</button>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
 <!-- End of Description of HOW TO USE app -->
 
 <!--navbar element to display search history of user-->
-<nav class="navbar navbar-expand-lg bg-dark ">
+<nav class="navbar navbar-expand-lg bg-dark " id="history">
   <div class="container-fluid">
     <a class="navbar-brand text-light" >Search History</a>
     <button class="btn btn-danger responsive-content " type="button" id="clearSearch"

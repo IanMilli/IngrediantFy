@@ -1,6 +1,14 @@
+/**api keys for use with the application */
 let spoonacularApiKey = "9575d7b24ee042eabce68a8f0dd4cec7"
 let calorieNinjaApiKey = "bpGUOf+/ZIm6T5zzOTafCw==kaTMpUEumQBV1CvA"
 
+/**defined global variables for application code */
+//Ian-code variables
+let ingredientEl = document.getElementById("inputIngredient");
+let searchEl = document.getElementById("search");
+let clearEl = document.getElementById("clearSearch");
+let historyEl = document.getElementById("history");
+let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 //ANDREI
 let searchButton = document.querySelector("#search")
 let inputArea = document.querySelector(".form-control")
@@ -20,20 +28,21 @@ let cardArea = document.querySelector("#card-placeholder")
 // .then(data => console.log(data))
 
 //HERE IS CODE BY ANDREI
+function getIngrediant() {
 
-searchButton.addEventListener("click", function(event) {
-  //this clears the old input
-  // cardArea.innerHTML = ""
+searchButton.addEventListener("click", function (event) {
+    //this clears the old input
+    // cardArea.innerHTML = ""
     event.preventDefault();
     fetch("https://api.spoonacular.com/recipes/complexSearch?query=" + inputArea.value + "&apiKey=9575d7b24ee042eabce68a8f0dd4cec7&includeNutrition=true&addRecipeNutrition=true&addRecipeInformation=true&number=5")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data)
-      //for loop for displaying cards
-      for(i=0;i<6;i++) {
-        //dynamically adds the data
-        cardArea.innerHTML +=
-         `<div class="col">
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            //for loop for displaying cards
+            for (i = 0; i < 6; i++) {
+                //dynamically adds the data
+                cardArea.innerHTML +=
+                    `<div class="col">
           <section class="mx-auto my-5" style="max-width: 23rem;">
           <div class="card">
           <div class="bg-image-card hover-overlay ripple" data-mdb-ripple-color="light">
@@ -148,4 +157,39 @@ searchButton.addEventListener("click", function(event) {
               </div>
               </section>
               </div>`
-            }})})
+            }
+        })
+})}
+//code added by Ian
+ /* create a event listener for when the user clicks on the search  button*/
+ searchEl.addEventListener("click", function () {
+    let searchTerm = ingredientEl.value;
+    getIngrediant(searchTerm);
+    searchHistory.push(searchTerm);
+    localStorage.setItem("search", JSON.stringify(searchHistory));
+    renderSearchHistory();
+  })
+
+  /* create an event listener for when the user clicks on the clear search history button*/ 
+  clearEl.addEventListener("click", function () {
+    localStorage.clear();
+    searchHistory = [];
+    renderSearchHistory();
+/**use window.location.reload to reset the page and ensure the page knows local storage is cleared */
+    window.location.reload();
+  })
+  /** create function to render the search history */
+  function renderSearchHistory() {
+    historyEl.innerHTML = "";
+    for (let i = 0; i < searchHistory.length; i++) {
+      const historyItem = document.createElement("input");
+      historyItem.setAttribute("type", "button");
+      historyItem.setAttribute("readonly", true);
+      historyItem.setAttribute("class", "form-control row d-block bg-primary ml-1 text-white text-center responsive-content");
+      historyItem.setAttribute("value", searchHistory[i]);
+      historyItem.addEventListener("click", function () {
+        getWeather(historyItem.value);
+      })
+      historyEl.append(historyItem);
+    }
+  }
