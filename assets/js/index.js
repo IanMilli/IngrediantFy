@@ -1,3 +1,5 @@
+
+
 /**api keys for use with the application */
 let spoonacularApiKey = "9575d7b24ee042eabce68a8f0dd4cec7"
 let calorieNinjaApiKey = "bpGUOf+/ZIm6T5zzOTafCw==kaTMpUEumQBV1CvA"
@@ -32,9 +34,7 @@ let cardArea = document.querySelector("#card-placeholder")
 
 
     function getIngredient() {
-        //this clears the old input
-        // cardArea.innerHTML = ""
-        event.preventDefault();
+        
        
         fetch("https://api.spoonacular.com/recipes/complexSearch?query=" + inputArea.value + "&apiKey=9575d7b24ee042eabce68a8f0dd4cec7&includeNutrition=true&addRecipeNutrition=true&addRecipeInformation=true&number=5")
             .then(response => response.json())
@@ -163,11 +163,14 @@ let cardArea = document.querySelector("#card-placeholder")
             })
         }
     
-
+  
 
 //code added by Ian
 /* create a event listener for when the user clicks on the search  button*/
 searchButton.addEventListener("click", function (event) {
+//this clears the old input - andrei
+        // cardArea.innerHTML = ""
+        event.preventDefault();
     let searchTerm = ingredientEl.value;
     getIngredient(searchTerm);
     searchHistory.push(searchTerm);
@@ -182,7 +185,8 @@ clearEl.addEventListener("click", function () {
     renderSearchHistory();
     /**use window.location.reload to reset the page and ensure the page knows local storage is cleared */
     window.location.reload();
-})
+    }
+)
 /** create function to render the search history */
 function renderSearchHistory() {
     historyEl.innerHTML = "";
@@ -190,11 +194,12 @@ function renderSearchHistory() {
         const historyItem = document.createElement("input");
         historyItem.setAttribute("type", "button");
         historyItem.setAttribute("readonly", true);
-        historyItem.setAttribute("class", "rounded bg-primary ml-1 text-center text-light responsive-content");
+        historyItem.setAttribute("class", "rounded-5 btn-lg bg-primary ml-2 text-center text-light responsive-content");
         historyItem.setAttribute("value", searchHistory[i]);
         historyItem.addEventListener("click", function () {
-            getWeather(historyItem.value);
+            getIngredient(historyItem.value);
         })
         historyEl.append(historyItem);
     }
 }
+
