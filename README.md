@@ -1,4 +1,4 @@
-# Foodify App
+# Ingrediantfy App
 
 The App allows users to type in the ingredients they have in the fridge. It then provides a suggestion about recipes they can make with the available ingredients. 
 For example, if a user types in Spaghetti, prawns, red peppers, onions, it will produce a dish of ‘pasta with shrimp and Bell peppers or  Roasted Red Peppers and Herbs.  
