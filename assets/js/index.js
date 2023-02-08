@@ -142,16 +142,17 @@ window.onload = renderSearchHistory()
             </div>
           </div>
           <!-- Recipe Button trigger modal -->
-               <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#caloriesModal${i}">
+               <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#jokesModal${i}">
                 Show Recipe
                 </button>
               <!-- Modal -->
-              <div class="modal fade" id="caloriesModal${i}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              <div class="modal fade" id="caloriesModal${i}" tabindex="-1" role="dialog" aria-labelledby="jokesModal"
               aria-hidden="true">
               <div class="modal-dialog" role="document">
               <div class="modal-content">
               <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Recipe Nutrition Label</h5>
+              <h5 class="modal-title" id="jokesModal">Recipe Nutrition Label</h5>
+              //space for Ian
               </div>
               <div class="modal-body">
               </div>
