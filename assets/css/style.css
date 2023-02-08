@@ -28,6 +28,10 @@ background-color: white;
 #copyright-link{
   background-color: rgba(0, 0, 0, 0.2);
 }
+/*move navbar text right*/
+.rightNavText {
+ margin-left: 50vh;
+}
 /* Buttons arranged in column on xs devices */
 @media screen and (max-width: 576px) {
   .btn, .responsive-content {

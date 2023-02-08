@@ -11,8 +11,46 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<!--logo image for web application-->
-<img src="./assets/images/logo.png" class="mx-auto d-block mb-1" style="height:18vh;width:auto;"></img>
+
+<!--header nav for page-->
+
+
+<nav class="navbar navbar-expand-lg  bg-dark">
+  <div class="container-fluid">
+    <img src="./assets/images/logo.png" class="mr-auto d-block mb-1" style="height:18vh;width:auto;"></img>
+    <div class="rightNavText">
+      <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-white" href="#about"> About The Application</a>
+      </button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-white" href="#quotes"> Quotes</a>
+      </button>
+      <button type="button" class="btn btn-dark nav-item dropdown" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="nav-item dropdown navbar-brand dropdown-toggle text-white" href="#" role="button"
+            data-bs-toggle="dropdown"> Links</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://github.com/FireCodexs/Foodify">Application Repository</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="https://spoonacular.com/food-api">Spoonocular Api</a></li>
+            <li><a class="dropdown-item" href="https://api-ninjas.com/api/quotes">Food Quotes Api</a></li>
+          </ul>
+        </button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">
+        <!-- Button trigger modal -->
+        <a class="navbar-brand text-white">Search History</a>
+      </button>
+        
+      
+      
+    </div>
+  </div>
+  </div>
+</nav>
 <!-- Hero -->
 <div class="p-5 text-center bg-image">
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
@@ -20,9 +58,9 @@
       <div class="text-white">
         <h1 class="mb-3">Fancy a new dish?</h1>
         <h4 class="mb-3">Type in below your desired food and we will make it work!</h4>
-        <div class="input-group mb-3" >
-          <input type="text" class="form-control" placeholder="Something delicious" id="inputIngredient" >
-          <div class="input-group-append" >
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Something delicious" id="inputIngredient">
+          <div class="input-group-append">
             <button id="search" class=" btn btn-success " type="submit">Search</button>
           </div>
         </div>
@@ -66,12 +104,12 @@
     <section class="mt-5">
       <div class="row text-center d-flex justify-content-center pt-5">
         <div class="col-md-6">
-          
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">
-              <!-- Button trigger modal -->
-              <h6 class="text-uppercase font-weight-bold"></h6>Search History </h6>
-            </button>
-         
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">
+            <!-- Button trigger modal -->
+            <h6 class="text-uppercase font-weight-bold"></h6>Search History </h6>
+          </button>
+
         </div>
         <div class="col-md-6">
           <h6 class="text-uppercase font-weight-bold">
@@ -99,7 +137,7 @@
       </div>
       <div class="modal-body">
         <p>Click on the attached buttons to return to a previously searched item</p>
-       <div id="history" style="display:flex;flex-direction: column;"></div>
+        <div id="history" style="display:flex;flex-direction: column;"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
