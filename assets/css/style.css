@@ -1,9 +1,43 @@
 body {
   background-color: whitesmoke;
   background-repeat: no-repeat;
-  width: 90%;
-  margin: auto;
+  margin: 0;
   }
+/*added font css to make text responsive*/
+  h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    color: white;
+}
+
+h2 {font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    color: white;
+}
+
+h3 {font-family:  sans-serif;
+    font-size: 2vw;
+    color: navy;
+   
+}
+h4 {font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+    color: black;
+}
+h5 {font-family:  sans-serif;
+  font-size: 2vw;
+  color: navy;
+  margin-left: 15vh;
+}
+h6 {font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5vw;
+  color: black;
+  margin-left: 10vh;
+}
+b{font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    color: black;
+}
 /* This is for the hero background */
 .bg-image {
     background-image: url('../images/hero.jpg');
@@ -12,6 +46,9 @@ body {
 }
 .cnt-card{
   border-radius: 50px;
+}
+.jokeSection{
+  background-color: black;
 }
 /* This creates a scroll bar which includes LOADS of data structured in a nice box */
 .card-text {
@@ -22,19 +59,31 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /*Jumbotron CSS*/
-#avocado-jumb, #broc-jumb{
-  width: 20em;
-  height: 20em;
+
+
+#avocado-jumb, #broc-jumb {
+  width: 18em;
+  height: 18em;
+  margin-left: 10vh;
+}
+#banana-jumb {
+  width: 18em;
+  height: 18em;
+  margin-right: 20vh;
+}
+#broc-jumb {
+  width: 14em;
+  height: 14em;
+  margin-right:15vh;
 }
 .jmbOne{
   background-color: rgb(151,191,191);
 }
 .jmbTwo{
+  background-color: rgb(130, 171, 248);
 }
-h5{
-  padding: 10px;
-  margin-top: 20px;
-}
+
+
 /*Jumbotron CSS*/
 /* Buttons arranged in column on xs devices */
 @media screen and (max-width: 576px) {

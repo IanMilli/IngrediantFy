@@ -12,10 +12,12 @@ let searchEl = document.getElementById("search");
 let clearEl = document.getElementById("clearSearch");
 let historyEl = document.getElementById("history");
 let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
+
 //ANDREI
 let searchButton = document.querySelector("#search")
 let inputArea = document.querySelector(".form-control")
 let cardArea = document.querySelector("#card-placeholder")
+let jokesEl = document.getElementById("jokes")
 
 //test example for calorie API
 // fetch("https://api.calorieninjas.com/v1/nutrition?query=10oz your food name",
@@ -33,24 +35,23 @@ let cardArea = document.querySelector("#card-placeholder")
 
 
 /**allows retention of search history -Ian*/
-window.onload = renderSearchHistory()
+window.onload = renderSearchHistory();
+
+window.onload = joke();
 
 function joke(){
-  let limit = 20
-  $.ajax({
-      method: 'GET',
-      url: 'https://api.api-ninjas.com/v1/jokes?limit=' + limit,
-      headers: { "X-Api-Key": "bpGUOf+/ZIm6T5zzOTafCw==kaTMpUEumQBV1CvA"},
-      contentType: 'application/json',
-      success: function(jokes) {
-          console.log(jokes);
-      },
-      error: function ajaxError(jqXHR) {
-          console.error('Error: ', jqXHR.responseText);
-      }
-  });
-}
 
+  fetch('https://api.api-ninjas.com/v1/jokes', {
+    method: "GET",
+    headers: {"X-Api-Key": "dUAUs30Lfu4CuIlu7zOLWg==qDOYWZsxCCElnYyb"}
+  })
+  .then(response => response.json())
+  .then(joke => {
+    let generatedJoke = joke[0].joke
+  console.log(joke);
+  jokesEl.innerHTML = generatedJoke;
+})
+}
 
 
 /**function to wrap around api enquiry to aid in functions that run the search button etc- moved onclick search button code to bottom of page */
@@ -67,7 +68,7 @@ function joke(){
                     //dynamically adds the data
                     cardArea.innerHTML +=
                         `<div class="col">
-          <section class="mx-auto my-5" style="max-width: 23rem;">
+          <section class="mx-auto my-5" style="max-width: 23rem; ">
           <div class="card">
           <div class="bg-image-card hover-overlay ripple" data-mdb-ripple-color="light">
           <img src="${data.results[i].image}" class="rounded mx-auto d-block" />
