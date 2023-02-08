@@ -1,4 +1,4 @@
-# Foodify App
+# Ingrediantfy App
 
 The App allows users to type in the ingredients they have in the fridge. It then provides a suggestion about recipes they can make with the available ingredients. 
 For example, if a user types in Spaghetti, prawns, red peppers, onions, it will produce a dish of ‘pasta with shrimp and Bell peppers or  Roasted Red Peppers and Herbs.  
@@ -35,32 +35,43 @@ To view the code repository for the deployed application please use the followin
 
 ## Wireframing
 
-placeholder to add wireframing images and explanantion of app development
+Project wireframe containing the rough outline of the three main elements of the web application design including :
 
+*section 1) the homepage - what the user will first see when they view the application via the deployed link
+
+*section 2) the result page - what the user will see when they click the search page
+
+*section 3) what the user will see when they request further details on their search results.
+
+This wireframe is not the defined end result but a guide for all authors to create the initial structure of the app from which it shall evolve.
+
+*[Wireframe 1](https://github.com/FireCodexs/Foodify/blob/65bd4dfcc95284ade306576fb401580f4638ede9/assets/images/wireframe%201.png)
 ## Usage
 
 Placeholder to allow us to describe how to use the app here
 
 ```
 ## Screenshots
+
 placeholder location for screenshots to be added
+
 ## Credits
+
 Application Authors:
 Abby Egbo.
 Andrei Grigoras.
 Ian Millichamp
 
-
 ## References
 
 The following is a list of reference materials used in development of the application:\
+
 *https://getbootstrap.com/ - Bootstrap CSS Framework documentation.
 *https://spoonacular.com/food-api - Spoonacular API documentation.
 *https://calorieninjas.com/api - Calorie Ninja API documentation.
 
-
-
 ## License
+
 MIT License
 Copyright (c) 2023 IanMilli
 Permission is hereby granted, free of charge, to any person obtaining a copy

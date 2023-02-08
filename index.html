@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+
 <body>
   <h1>Food app</h1>
   <!-- Hero -->
@@ -26,10 +27,67 @@
             <div class="input-group-append">
               <button id="search" class="btn btn-success" type="submit">Search</button>
             </div>
+<!--header nav for page-->
+
+
+<nav class="navbar navbar-expand-lg  bg-dark">
+  <div class="container-fluid">
+    <img src="./assets/images/logo.png" class="mr-auto d-block mb-1" style="height:18vh;width:auto;"></img>
+    <div class="rightNavText">
+      <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-white" href="#about"> About The Application</a>
+      </button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-white" href="#quotes"> Quotes</a>
+      </button>
+      <button type="button" class="btn btn-dark nav-item dropdown" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="nav-item dropdown navbar-brand dropdown-toggle text-white" href="#" role="button"
+            data-bs-toggle="dropdown"> Links</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://github.com/FireCodexs/Foodify">Application Repository</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="https://spoonacular.com/food-api">Spoonocular Api</a></li>
+            <li><a class="dropdown-item" href="https://api-ninjas.com/api/quotes">Food Quotes Api</a></li>
+          </ul>
+        </button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">
+        <!-- Button trigger modal -->
+        <a class="navbar-brand text-white">Search History</a>
+      </button>
+       
+    </div>
+  </div>
+  </div>
+</nav>
+<!-- Hero -->
+<div class="p-5 text-center bg-image">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Fancy a new dish?</h1>
+        <h4 class="mb-3">Type in below your desired food and we will make it work!</h4>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Something delicious" id="inputIngredient">
+          <div class="input-group-append">
+            <button id="search" class=" btn btn-success " type="submit">Search</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<!-- Hero -->
+
+<!-- Description of HOW TO USE app-->
+<div class="container">
+  <div class="row">
+    <div class="col-4">img here</div>
+    <div class="col-8">text here</div>
   </div>
   <!-- Hero -->
 
@@ -41,19 +99,12 @@
         <img src="assets/images/avocado.gif" alt="Dancing Avocado" id="Avocado-img">
         <br></br>
         <div class="col-12">
-      
           <P>Foodify App help users discover new recipes, plan their meals, and manage their diets.  
             The App enable users to search for recipes based on ingredients, dietary restrictions, and cuisine.
-
             <p> It allow users to plan their meals for the week, save recipes, and generate shopping lists. Users can check their fridges for left over ingredients 
-              our App will then enable them to make a meal out of the ingredients in their fridges or kitchen cupboards!
-            </p>
-            
+              our App will then enable them to make a meal out of the ingredients in their fridges or kitchen cupboards!</p>
             <p>The App provides Nutritional information: Provide information about the calorie count, macronutrient breakdown, and other important nutritional information 
             for each recipe.</p>
-
-           
-
         </div>
       </div>
     </div>
@@ -73,16 +124,7 @@
       <!-- </div>
     </div> -->
 
-
-
-
-
       <!-- End of Description of HOW TO USE app -->
-
-
-
-
-
 
       <!--Card Listing-->
       <div class="row flex-row" id="card-placeholder">
@@ -94,6 +136,66 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+<!--Card Listing-->
+<div class="row flex-row" id="card-placeholder">
+
+</div>
+<!-- Card Listing-->
+
+
+
+<!-- Footer -->
+<footer class="text-center text-white" style="background-color: #3F51B5">
+  <div class="container">
+    <section class="mt-5">
+      <div class="row text-center d-flex justify-content-center pt-5">
+        <div class="col-md-6">
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">
+            <!-- Button trigger modal -->
+            <h6 class="text-uppercase font-weight-bold"></h6>Search History </h6>
+          </button>
+
+        </div>
+        <div class="col-md-6">
+          <h6 class="text-uppercase font-weight-bold">
+            <!--link to return to the home page/ clear cards-->
+            <a href="#!" class="text-white">Home</a>
+          </h6>
+        </div>
+    </section>
+    <hr class="my-5" />
+  </div>
+  <div class="text-center p-3" id="copyright-link">© 2023 Copyright:
+    <a class="text-white" href="https://github.com/FireCodexs/Foodify">Abby, Ian & Andrei</a>
+  </div>
+</footer>
+
+<!--modal to add search history to-->
+
+
+<div class="modal fade" id="searchHistoryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text text-center" id="exampleModalLabel">Search History</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Click on the attached buttons to return to a previously searched item</p>
+        <div id="history" style="display:flex;flex-direction: column;"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" id="clearSearch">Clear Search History</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./assets/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 

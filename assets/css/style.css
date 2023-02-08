@@ -1,5 +1,5 @@
 body {
-    background-color: #f5f6fa;
+  background-color: white;
   }
 
 /* This is for the hero background */
@@ -30,7 +30,6 @@ body {
   height:20em; 
   background-color: rgb(68, 159, 129);
   font-weight: bolder;
-  
 }
 
 #Avocado-img{
@@ -70,4 +69,43 @@ display: flex;
 .col-4{
 
   display: flex;
+=======
+/*search history buttons*/
+.historyBut {
+ width: 20vh;
+ margin: 1vm;
+}
+/* code by andrei for the footer styling*/
+#copyright-link{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*move navbar text right*/
+.rightNavText {
+ margin-left: 50vh;
+}
+/* Buttons arranged in column on xs devices */
+@media screen and (max-width: 576px) {
+  .btn, .responsive-content {
+      width: 80%;
+      padding: 10px 15px;
+      margin: 5px 10px;
+  }
+ 
+}
+
+@media (max-width:750px) {
+  .btn, .responsive-content {
+      font-size: 1.5vw;
+    
+  }
+  
+}
+
+
+@media (max-width: 1000px) {
+  .btn, .responsive-content {
+      font-size: 1.7vw;
+      height: 2.3vw;
+      width: 22vw;
+  }
 }
