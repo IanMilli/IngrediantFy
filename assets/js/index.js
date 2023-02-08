@@ -34,9 +34,28 @@ let cardArea = document.querySelector("#card-placeholder")
 
 /**allows retention of search history -Ian*/
 window.onload = renderSearchHistory()
+
+function joke(){
+  let limit = 20
+  $.ajax({
+      method: 'GET',
+      url: 'https://api.api-ninjas.com/v1/jokes?limit=' + limit,
+      headers: { "X-Api-Key": "bpGUOf+/ZIm6T5zzOTafCw==kaTMpUEumQBV1CvA"},
+      contentType: 'application/json',
+      success: function(jokes) {
+          console.log(jokes);
+      },
+      error: function ajaxError(jqXHR) {
+          console.error('Error: ', jqXHR.responseText);
+      }
+  });
+}
+
+
+
 /**function to wrap around api enquiry to aid in functions that run the search button etc- moved onclick search button code to bottom of page */
     function getIngredient() {
-        
+      
         
        //HERE IS CODE BY ANDREI
         fetch("https://api.spoonacular.com/recipes/complexSearch?query=" + inputArea.value + "&apiKey=9575d7b24ee042eabce68a8f0dd4cec7&includeNutrition=true&addRecipeNutrition=true&addRecipeInformation=true&number=5")
@@ -64,8 +83,6 @@ window.onload = renderSearchHistory()
                  
        
                   <p class="lead"><strong>Dish price:</strong> ${Number.parseFloat(data.results[i].pricePerServing / 100).toFixed(2)}£</p>
-
-
   
               <!-- Recipe Button trigger modal -->
               <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#recipeModal${i}">
@@ -142,17 +159,19 @@ window.onload = renderSearchHistory()
             </div>
           </div>
           <!-- Recipe Button trigger modal -->
-               <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#jokesModal${i}">
+               <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#caloriesModal${i}">
                 Show Recipe
                 </button>
               <!-- Modal -->
-              <div class="modal fade" id="caloriesModal${i}" tabindex="-1" role="dialog" aria-labelledby="jokesModal"
+              <div class="modal fade" id="caloriesModal${i}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog" role="document">
               <div class="modal-content">
               <div class="modal-header">
-              <h5 class="modal-title" id="jokesModal">Recipe Nutrition Label</h5>
-              //space for Ian
+              <h5 class="modal-title" id="jokesModal">Jokes</h5>
+            
+
+              
               </div>
               <div class="modal-body">
               </div>
@@ -206,4 +225,3 @@ function renderSearchHistory() {
         historyEl.append(historyItem);
     }
 }
-
