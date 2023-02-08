@@ -29,18 +29,21 @@ body {
   width: 20em; 
   height:20em; 
   background-color: rgb(68, 159, 129);
+  font-weight: bolder;
   
 }
 
 #Avocado-img{
+  background-color: rgb(68, 159, 129);
   padding-top:10%;
   padding-bottom: 10%;
   padding-right: 10%;
   padding-left:10%;
   width: 20em; 
   height:20em; 
-  position: relative;
-  background-color: rgb(68, 159, 129);
+ 
+  
+  /* position: relative; */
   
 }
 
