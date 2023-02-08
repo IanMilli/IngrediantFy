@@ -1,45 +1,41 @@
 body {
   background-color: whitesmoke;
   background-repeat: no-repeat;
-  width: 80%;
+  width: 90%;
   margin: auto;
   }
-
 /* This is for the hero background */
 .bg-image {
     background-image: url('../images/hero.jpg');
     background-size: cover;
     height: 35vh;
 }
-
 .cnt-card{
   border-radius: 50px;
 }
-
-
 /* This creates a scroll bar which includes LOADS of data structured in a nice box */
 .card-text {
   height: 10em;
   overflow: auto;
 }
-
 #copyright-link{
   background-color: rgba(0, 0, 0, 0.2);
 }
-
-
 /*Jumbotron CSS*/
-#avocado-jumb{
+#avocado-jumb, #broc-jumb{
   width: 20em;
   height: 20em;
 }
-
-
-.jumbotron{
-  margin-bottom: 50px;
+.jmbOne{
+  background-color: rgb(151,191,191);
+}
+.jmbTwo{
+}
+h5{
+  padding: 10px;
+  margin-top: 20px;
 }
 /*Jumbotron CSS*/
-
 /* Buttons arranged in column on xs devices */
 @media screen and (max-width: 576px) {
   .btn, .responsive-content {
@@ -47,18 +43,12 @@ body {
       padding: 10px 15px;
       margin: 5px 10px;
   }
- 
 }
-
 @media (max-width:750px) {
   .btn, .responsive-content {
       font-size: 1.5vw;
-    
   }
-  
 }
-
-
 @media (max-width: 1000px) {
   .btn, .responsive-content {
       font-size: 1.7vw;
