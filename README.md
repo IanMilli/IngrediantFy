@@ -69,8 +69,6 @@ The following is a list of reference materials used in development of the applic
 *https://getbootstrap.com/ - Bootstrap CSS Framework documentation.
 *https://spoonacular.com/food-api - Spoonacular API documentation.
 *https://calorieninjas.com/api - Calorie Ninja API documentation.
-*MDN Documents
-*Slack Overflow - how to prevent rounding up of decimals
 
 ## License
 
