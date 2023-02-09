@@ -66,13 +66,16 @@
             <input type="text" class="form-control" placeholder="Something delicious" id="inputIngredient">
             <div class="input-group-append ">
               <!--search button that will have the id search to connect with the onclick event function in index.js-->
-              <button id="search" class=" btn btn-success " type="submit">Search</button>
+              <button id="search" class=" btn btn-success "  type="submit">Search</button>
             </div>
           </div>
-          <!--button to allow user to more quickly move to the section of the page where the generated recipe cards are displayed -->
-          <a class="btn btn-success rounded-3 mb-4" href="#recipeCards" role="button"> Click to See Recipe Cards</a>
         </div>
       </div>
+    </div>
+  </div>
+   <!--Section to connect to the generation of the recipe cards using javascript - Andrei-->
+   <div id="recipeCards">
+    <div class="row flex-row" id="card-placeholder">
     </div>
   </div>
   <!-- Section to display the daily joke -Ian -->
@@ -124,11 +127,7 @@
       </div>
     </div>
   </div>
-  <!--Section to connect to the generation of the recipe cards using javascript - Andrei-->
-  <div id="recipeCards">
-    <div class="row flex-row" id="card-placeholder">
-    </div>
-  </div>
+ 
  <!--footer section to include two buttons - one for the search history and one  to take a user back to the top of the page-->
   <footer class="text-center text-white" style="background-color: #3F51B5">
     <div class="container">
