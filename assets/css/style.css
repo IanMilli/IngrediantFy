@@ -54,7 +54,7 @@ b{font-family: Georgia, 'Times New Roman', Times, serif;
 .bg-image {
     background-image: url('../images/hero.jpg');
     background-size: cover;
-    height: 35vh;
+    height: 45vh;
 }
 .jokeSection{
   background-color: rgb(103, 94, 224);
