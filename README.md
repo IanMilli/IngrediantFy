@@ -42,7 +42,7 @@ The App also enables users to type in the name a dish. This will then produce fu
 
 ## Links
 
-To access the finished application please use the following link: [Foodify App]().
+To access the finished application please use the following link: [Foodify App](https://ianmilli.github.io/IngrediantFy/).
 
 To view the code repository for the deployed application please use the following link: [Github Repository](https://github.com/FireCodexs/Foodify).
 
