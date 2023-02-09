@@ -6,35 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IngrediantFy</title>
+  <!--links for bootstrap 5.3 css style sheets-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+  <!--link to style.css sheet allowing local control ov er page styling-->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
-<!--header nav for page-->
-
+<!--header navigation Bar for page-->
 <body>
   <nav class="navbar navbar-expand-lg topNav" id="home">
     <div class="container-fluid">
+      <!--logo image-->
       <img src="./assets/images/logo.png" class="mr-auto d-block mb-1" style="height:18vh;width:auto;"></img>
+      <!--div class to push navigation buttons to right of the page-->
       <div class="rightNavText">
+         <!--button to allow user to more quickly move to the section of the page where the generated recipe cards are displayed -->
         <a class="btn btn-primary rounded-3 mr-2" href="#recipeCards" role="button">Recipe Cards</a>
+         <!--button to allow user to more quickly move to the section of the page that explains the application in more detail -->
         <a class="btn btn-primary rounded-3 mr-2" href="#about" role="button">About The Application</a>
+         <!--button to allow user to more quickly move to the section of the page where the generated jokes are displayed -->
         <a class="btn btn-primary rounded-3 mr-2" href="#jokes" role="button">Jokes For Your Health</a>
+         <!--button to allow user to more quickly bring up the search history modal for their convenience -->
         <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">Search History</a>
       </div>
     </div>
   </nav>
-  <div class="jmbTwo">
+  <!--information section to explain to users how to use the app-->
+  <div class="sectionOne">
+    <!--class to put the text and picture on the same row-->
     <div class="row">
+      <!--classes to use bootstrap to style the text and picture created by Abby-->
       <div class="col-6 text-center text-white mt-4 " style="margin-left: 20vh;">
         <div>
+          <!--text to describe how to use the application , moved to top of the page for more user friendly experience- abby-->
           <b> Input the name of a food item in your pantry above and Click the SEARCH option to see the full features
             our
             Application offers.</b>
         </div>
         <div></div>
+        <!--text to help sell the application to the user with a creative flourish of salesmanship - Abby-->
         <h7> With our easy to use and informative App, you are sure to get all the information you need about consuming
           healthy calories in one place!
         </h7>
@@ -44,7 +55,7 @@
       </div>
     </div>
   </div>
-  <!-- Hero -->
+  <!-- Hero Section to allow the user to input their ingredient choice that will lead to an api response - Andrei-->
   <div class="p-5 text-center bg-image">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
       <div class="d-flex justify-content-center align-items-center h-100">
@@ -54,39 +65,47 @@
           <div class="input-group mb-3 ">
             <input type="text" class="form-control" placeholder="Something delicious" id="inputIngredient">
             <div class="input-group-append ">
+              <!--search button that will have the id search to connect with the onclick event function in index.js-->
               <button id="search" class=" btn btn-success " type="submit">Search</button>
             </div>
           </div>
+          <!--button to allow user to more quickly move to the section of the page where the generated recipe cards are displayed -->
           <a class="btn btn-success rounded-3 mb-4" href="#recipeCards" role="button"> Click to See Recipe Cards</a>
         </div>
       </div>
     </div>
   </div>
-  <!-- Hero -->
+  <!-- Section to display the daily joke -Ian -->
   <div class="jokeSection text-center" id="jokesDay">
     <div class="row">
       <div class="col-2 mt-4 mb-4 quote1">
+        <!--image to display a quote for why jokes are good for a persons health-->
         <img src="./assets/images/quote 1.jpg" alt="joke quote" style="width:15em;height:15em;">
       </div>
       <div class="col-6 text-center">
         <h3 class=" mt-5">
           A Little Joke To Brighten Your Day
         </h3>
+        <!--id used to link the reply from the api to to display the joke-->
         <h4 id="jokes" class=" mt-3 mb-3 text-white">
         </h4>
+        <!--extra button to allow the joke function to be reinitialized by the user so they can view multiple jokes-->
         <button id="nextJoke" class=" btn btn-success mt-4 mb-3" type="submit">Click For Another Joke</button>
       </div>
       <div class="col-2 mt-4 mb-4">
+        <!--second image to display a second quote for why jokes are good for a persons health-->
         <img src="./assets/images/quote 2.jpg" alt="joke quote" style="width:15em;height:15em;">
       </div>
     </div>
   </div>
-  <!-- Jumbotron1-->
+  <!-- section 2 of the about section - Abby-->
   <div class="jmbOne" id="about">
     <div class="row">
       <div class="col-3">
+        <!--image of the exercising avocado-->
         <img src="assets/images/avocado.gif" alt="Dancing Avocado" id="avocado-jumb">
       </div>
+      <!--text to describe the app and its purpose split into multiple header classes to allow bespoke styling-->
       <div class="col-6 text-start mt-3">
         <h4>The IngrediantFy App helps users discover new recipes, plan their meals, and manage their diets whilst
           throwing in a little bit of laughter along the way for a healthier lifestyle.</h4>
@@ -97,55 +116,48 @@
         <h5>Users can check their fridges for left over ingredients our App will then enable them to make a meal out
           of
           the ingredients in their fridges or kitchen cupboards!</h5>
-        <h6>The Application provides inportant nutritional information to guide the users</h6>
+        <h6>The Application provides important nutritional information to guide the users</h6>
       </div>
       <div class="col-3">
-        <img src="./assets/images/healthy_food_dribbble.gif" alt="Dancing Avocado" id="banana-jumb">
+         <!--image of the exercising banana-->
+        <img src="./assets/images/healthy_food_dribbble.gif" alt="Dancing Banana" id="banana-jumb">
       </div>
     </div>
   </div>
-  <!-- Jumbotron1-->
-  <!-- Jumbotron2-->
-
-  <!-- Jumbotron2-->
-  <!--Card Listing-->
+  <!--Section to connect to the generation of the recipe cards using javascript - Andrei-->
   <div id="recipeCards">
     <div class="row flex-row" id="card-placeholder">
     </div>
   </div>
-  <!-- Card Listing-->
-  <!-- End of Description of HOW TO USE app -->
-
-  <!-- Footer -->
+ <!--footer section to include two buttons - one for the search history and one  to take a user back to the top of the page-->
   <footer class="text-center text-white" style="background-color: #3F51B5">
     <div class="container">
       <section>
         <div class="row text-center d-flex justify-content-center pt-5">
           <div class="col-md-4">
+            <!--button to show the search history modal-->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">
-              <!-- Button trigger modal -->
               <h6 class="text-uppercase font-weight-bold"></h6>Search History </h6>
             </button>
           </div>
+          <!--application brand logo-->
           <img src="./assets/images/logo.png" class="mr-auto d-block mb-1" style="height:18vh;width:auto;"></img>
           <div class="col-md-4">
             <h6 class="text-uppercase font-weight-bold">
-              <!--link to return to the home page/ clear cards-->
+              <!--link to return to the top of the home page-->
               <a class="btn btn-primary" href="#home" role="button">Home</a>
             </h6>
           </div>
       </section>
       <hr class="my-5" />
     </div>
+    <!--text to add the copy right for the application and to include the Main Authors names that will be linked to the application repository-->
     <div class="text-center p-3" id="copyright-link">© 2023 Copyright:
       <a class="text-white" href="https://github.com/FireCodexs/Foodify">Abby Egbo, Andrei Grigoras & Ian
         Millichamp</a>
     </div>
   </footer>
-
-  <!--modal to add search history to-->
-
-
+  <!--modalthat will display the search history of the user if their is one-->
   <div class="modal fade" id="searchHistoryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -158,14 +170,17 @@
           <div id="history" style="display:flex;flex-direction: column;"></div>
         </div>
         <div class="modal-footer">
+          <!--button to close the modal-->
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!--button to clear the search history of the user-->
           <button type="button" class="btn btn-danger" id="clearSearch">Clear Search History</button>
         </div>
       </div>
     </div>
   </div>
-
+<!--link to local index.js file-->
   <script src="./assets/js/index.js"></script>
+  <!--link to bootstrap 5.3 javascript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
@@ -173,3 +188,4 @@
 </body>
 
 </html>
+<!--end of page-->

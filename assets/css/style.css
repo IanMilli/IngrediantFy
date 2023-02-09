@@ -45,6 +45,11 @@ b{font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5vw;
     color: black;
 }
+/*background styling for the section explaining how to use the app - sectionOne*/
+.sectionOne{
+  background-color: rgb(130, 171, 248);
+  
+}
 .topNav {
   background-color: #3F51B5;
 }
@@ -54,7 +59,7 @@ b{font-family: Georgia, 'Times New Roman', Times, serif;
 .bg-image {
     background-image: url('../images/hero.jpg');
     background-size: cover;
-    height: 45vh;
+    height: 35vh;
 }
 .jokeSection{
   background-color: rgb(103, 94, 224);
@@ -100,10 +105,7 @@ b{font-family: Georgia, 'Times New Roman', Times, serif;
 .jmbOne{
   background-color: rgb(151,191,191);
 }
-.jmbTwo{
-  background-color: rgb(130, 171, 248);
-  
-}
+
 
 
 /*Jumbotron CSS*/
