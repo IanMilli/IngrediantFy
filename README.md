@@ -84,15 +84,15 @@ the user can click the home button at the bottom of the page to return to the to
 ```
 ## Screenshots
 
-* screenshot to show the wep application [home page](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/home%20page.png). 
-* screenshot to show the wep application doing a search for  [beef dishes](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/beef%20search.png).
-* screenshot to show the wep application doing a search for  [fish dishes](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/fish%20search.png).
-* screenshot to show the wep application doing a search for  [duck dishes](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/duck%20search.png).
-* screenshot to show the wep application doing a search for  [chocolate dishes](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/search%20chocolate.png).
-* screenshot to show the wep application  [search history](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/search%20history%20after%20searchers.png).
+* screenshot to show the wep application [home page](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/home%20page.png)
+* screenshot to show the wep application doing a search for  [beef dishes](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/beef%20search.png)
+* screenshot to show the wep application doing a search for  [fish dishes](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/fish%20search.png)
+* screenshot to show the wep application doing a search for  [duck dishes](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/duck%20search.png)
+* screenshot to show the wep application doing a search for  [chocolate dishes](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/search%20chocolate.png)
+* screenshot to show the wep application  [search history](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/search%20history%20after%20searchers.png)
 * screenshot to show the wep application once [seach history has been cleared](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/search%20history%20cleared.png).
-* screenshot to show  [a joke](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/joke%201.png).
-*screenshot to show  [a joke once the next joke button is clicked](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/another%20joke%20after%20the%20button%20is%20clicked.png).
+* screenshot to show  [a joke](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/joke%201.png)
+*screenshot to show  [a joke once the next joke button is clicked](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/another%20joke%20after%20the%20button%20is%20clicked.png)
 
 ## Credits
 
