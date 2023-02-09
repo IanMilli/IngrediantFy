@@ -7,10 +7,15 @@ let calorieNinjaApiKey = "bpGUOf+/ZIm6T5zzOTafCw==kaTMpUEumQBV1CvA"
 
 /**defined global variables for application code */
 //Ian-code variables
+//variable to connect with user input of ingredient
 let ingredientEl = document.getElementById("inputIngredient");
+//variable to connect with id connected to the search button
 let searchEl = document.getElementById("search");
+//variable to connect with clear button
 let clearEl = document.getElementById("clearSearch");
+//variable to connect with id to display search history
 let historyEl = document.getElementById("history");
+//variable used to retrieve data from the local storage to keep the search history repopulated if needed
 let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 
 
@@ -18,8 +23,13 @@ let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 let searchButton = document.querySelector("#search")
 let inputArea = document.querySelector(".form-control")
 let cardArea = document.querySelector("#card-placeholder")
+//variable to allow the eventual displaying of the joke of the day
 let jokesEl = document.getElementById("jokes")
+//variable required by function to resend joke enquiry to the joke ninja api
 let nextJokeEl = document.getElementById("nextJoke")
+
+//the following are api tests carried out by us to ensure the validity of chosen apis, the calorieninja api was not used in the final product as
+//its content overlapped the spoonocular one to much
 
 //test example for calorie API
 // fetch("https://api.calorieninjas.com/v1/nutrition?query=10oz your food name",
@@ -38,16 +48,11 @@ let nextJokeEl = document.getElementById("nextJoke")
 
 /**allows retention of search history -Ian*/
 window.onload = renderSearchHistory();
-
+/**allows generation of the joke of the day as the page loads */
 window.onload = joke();
-
-
-
 
 /**function to wrap around api enquiry to aid in functions that run the search button etc- moved onclick search button code to bottom of page */
 function getIngredient() {
-
-
   //HERE IS CODE BY ANDREI
   fetch("https://api.spoonacular.com/recipes/complexSearch?query=" + inputArea.value + "&apiKey=9575d7b24ee042eabce68a8f0dd4cec7&includeNutrition=true&addRecipeNutrition=true&addRecipeInformation=true&number=5")
     .then(response => response.json())
@@ -146,6 +151,7 @@ function getIngredient() {
               </div>
                 </div>
               </div>
+              <!--commented out by Ian to see if we will have time to populate this data or not before presentation-->
               <!-- Recipe Button trigger modal -->
                <!--    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#caloriesModal${i}">
                     Show Recipe
@@ -170,8 +176,8 @@ function getIngredient() {
       }
     })
 }
+//function to make api call - call creeated by andrei and wrapped up by Ian
 function joke() {
-
   fetch('https://api.api-ninjas.com/v1/jokes', {
     method: "GET",
     headers: { "X-Api-Key": "dUAUs30Lfu4CuIlu7zOLWg==qDOYWZsxCCElnYyb" }
@@ -179,7 +185,9 @@ function joke() {
     .then(response => response.json())
     .then(joke => {
       let generatedJoke = joke[0].joke
+      //console log of joke to understand response of api to complete function
       console.log(joke);
+      //use the following to link the api response to the html section for jokes allowing the joke to be displayed to the user
       jokesEl.innerHTML = generatedJoke;
     })
 }
@@ -223,7 +231,7 @@ function renderSearchHistory() {
   }
 }
 
-
+//listerner event to allow user to view multiple jokes without needing to refresh the page
 nextJokeEl.addEventListener("click", function (event) {
   event.preventDefault();
   joke();

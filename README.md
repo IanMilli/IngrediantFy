@@ -100,6 +100,11 @@ The following is a list of reference materials used in development of the applic
 *https://getbootstrap.com/ - Bootstrap CSS Framework documentation.
 *https://spoonacular.com/food-api - Spoonacular API documentation.
 *https://calorieninjas.com/api - Calorie Ninja API documentation.
+*https://api-ninjas.com/api/jokes - Jokes Ninj API documentation.
+*MDN documents
+*W3School
+*stack overflow - how to prevent the rounding up of decimals
+*ta Johnathon Courtney and Luis Sanchez
 
 ## License
 
