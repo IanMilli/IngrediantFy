@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ingrediantfy</title>
+  <title>IngrediantFy</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
@@ -15,92 +15,91 @@
 <!--header nav for page-->
 
 <body>
-  <nav class="navbar navbar-expand-lg  bg-dark">
+  <nav class="navbar navbar-expand-lg topNav" id="home">
     <div class="container-fluid">
       <img src="./assets/images/logo.png" class="mr-auto d-block mb-1" style="height:18vh;width:auto;"></img>
       <div class="rightNavText">
-        <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <a class="navbar-brand text-white" href="#about"> About The Application</a>
-        </button>
-        <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <a class="navbar-brand text-white" href="#quotes"> Quotes</a>
-        </button>
-        <button type="button" class="btn btn-dark nav-item dropdown" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <a class="nav-item dropdown navbar-brand dropdown-toggle text-white" href="#" role="button"
-            data-bs-toggle="dropdown"> Links</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://github.com/FireCodexs/Foodify">Application Repository</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="https://spoonacular.com/food-api">Spoonocular Api</a></li>
-            <li><a class="dropdown-item" href="https://api-ninjas.com/api/quotes">Food Quotes Api</a></li>
-          </ul>
-        </button>
-        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">
-          <!-- Button trigger modal -->
-          <a class="navbar-brand text-white">Search History</a>
-        </button>
+        <a class="btn btn-primary rounded-3 mr-2" href="#recipeCards" role="button">Recipe Cards</a>
+        <a class="btn btn-primary rounded-3 mr-2" href="#about" role="button">About The Application</a>
+        <a class="btn btn-primary rounded-3 mr-2" href="#jokes" role="button">Jokes For Your Health</a>
+        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">Search History</a>
       </div>
     </div>
   </nav>
+  <div class="jmbTwo">
+    <div class="row">
+      <div class="col-6 text-center text-white mt-4 " style="margin-left: 20vh;">
+        <div>
+          <b> Input the name of a food item in your pantry above and Click the SEARCH option to see the full features
+            our
+            Application offers.</b>
+        </div>
+        <div></div>
+        <h7> With our easy to use and informative App, you are sure to get all the information you need about consuming
+          healthy calories in one place!
+        </h7>
+      </div>
+      <div class="col-4  mb-4 mt-4 ">
+        <img src="assets/images/Brocolli-Head.jpg" alt="Broccoli Man" id="broc-jumb">
+      </div>
+    </div>
+  </div>
   <!-- Hero -->
   <div class="p-5 text-center bg-image">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
       <div class="d-flex justify-content-center align-items-center h-100">
         <div class="text-white">
           <h1 class="mb-3">Fancy a new dish?</h1>
-          <h2 class="mb-3">Type in below your desired food and we will make it work!</h2>
-          <div class="input-group mb-3">
+          <h2 class="mb-3">Type in an ingredient in your pantry and we will find you healthy dishes to make!</h2>
+          <div class="input-group mb-3 ">
             <input type="text" class="form-control" placeholder="Something delicious" id="inputIngredient">
-            <div class="input-group-append">
+            <div class="input-group-append ">
               <button id="search" class=" btn btn-success " type="submit">Search</button>
             </div>
           </div>
+        
+        <div>
+          <a class="btn btn-success rounded-3 mb-4" href="#recipeCards" role="button"> Click to See Recipe Cards</a>
         </div>
       </div>
     </div>
   </div>
   <!-- Hero -->
-  <div class="jokeSection">
+  <div class="jokeSection text-center" id="jokesDay">
     <div class="row">
-      <div class="col-9 text-center">
-        <h5 class=" text-center text-white">
-          Joke of The Day
-        </h5>
-        <p id="jokes" class=" mt-3 text-center text-white">
-        </p>
+      <div class="col-2 mt-4 mb-4 quote1">
+        <img src="./assets/images/quote 1.jpg" alt="joke quote" style="width:15em;height:15em;">
       </div>
-      <div class="col-3">
-        <img
-          src="./assets/images/Your-body-cannot-heal-without-play.-Your-mind-cannot-heal-without-laughter.-Your-soul-cannot-heal-without-joy.-—-Catherine-Rippenger-Fenwick.jpg"
-          alt="joke quote" style="width:22em;height:22em;">
+      <div class="col-6 text-center">
+        <h3 class=" mt-5">
+          A Little Joke To Brighten Your Day
+        </h3>
+        <h4 id="jokes" class=" mt-3 mb-3 text-white">
+        </h4>
+        <button id="nextJoke" class=" btn btn-success mt-4 mb-3" type="submit">Click For Another Joke</button>
+      </div>
+      <div class="col-2 mt-4 mb-4">
+        <img src="./assets/images/quote 2.jpg" alt="joke quote" style="width:15em;height:15em;">
       </div>
     </div>
   </div>
-
-
-
   <!-- Jumbotron1-->
-  <div class="jmbOne">
+  <div class="jmbOne" id="about">
     <div class="row">
       <div class="col-3">
         <img src="assets/images/avocado.gif" alt="Dancing Avocado" id="avocado-jumb">
       </div>
       <div class="col-6 text-start mt-3">
-        <h3>Foodify App help users discover new recipes, plan their meals, and manage their diets.
-          The App enable users to search for recipes based on ingredients, dietary restrictions, and cuisine.</h3>
-        <h4>It allow users to plan their meals for the week, save recipes, and generate shopping lists. Users can
-          check
-          their fridges for left over ingredients
-          our App will then enable them to make a meal out of the ingredients in their fridges or kitchen cupboards!
-        </h4>
-        <h4>The App provides Nutritional information: Provide information about the calorie count, macronutrient
-          breakdown, and other important nutritional information for each recipe.</h4>
+        <h4>The IngrediantFy App helps users discover new recipes, plan their meals, and manage their diets whilst
+          throwing in a little bit of laughter along the way for a healthier lifestyle.</h4>
+        <h5> The App enables users to view healthy for the soul jokes at the touch of a button and to search for
+          recipes
+          based on ingredients that they have in their pantry.</h5>
+        <h5>It allows users to plan their meals, save recipes, check calorie counts and generate shopping lists. </h5>
+        <h5>Users can check their fridges for left over ingredients our App will then enable them to make a meal out
+          of
+          the ingredients in their fridges or kitchen cupboards!</h5>
+        <h6>The Application provides inportant nutritional information to guide the users</h6>
       </div>
       <div class="col-3">
         <img src="./assets/images/healthy_food_dribbble.gif" alt="Dancing Avocado" id="banana-jumb">
@@ -109,25 +108,12 @@
   </div>
   <!-- Jumbotron1-->
   <!-- Jumbotron2-->
-  <div class="jmbTwo">
-    <div class="row">
-      <div class="col-8 text-start mt-5 ">
-        <h5 class=" text-center">
-          Click the SEARCH option to see the full features our App offers.
-        </h5>
-        <h6 class=" mt-3 text-center">
-          With our easy to use and informative App, you are sure to get all the information you need about consuming
-          healthy calories in one place!
-        </h6>
-      </div>
-      <div class="col-4 mt-3 mb-3 ">
-        <img src="assets/images/Brocolli-Head.jpg" alt="Broccoli Man" id="broc-jumb">
-      </div>
-    </div>
-  </div>
+
   <!-- Jumbotron2-->
   <!--Card Listing-->
-  <div class="row flex-row" id="card-placeholder">
+  <div id="recipeCards">
+    <div class="row flex-row" id="card-placeholder">
+    </div>
   </div>
   <!-- Card Listing-->
   <!-- End of Description of HOW TO USE app -->
@@ -137,23 +123,25 @@
     <div class="container">
       <section>
         <div class="row text-center d-flex justify-content-center pt-5">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">
               <!-- Button trigger modal -->
               <h6 class="text-uppercase font-weight-bold"></h6>Search History </h6>
             </button>
           </div>
-          <div class="col-md-6">
+          <img src="./assets/images/logo.png" class="mr-auto d-block mb-1" style="height:18vh;width:auto;"></img>
+          <div class="col-md-4">
             <h6 class="text-uppercase font-weight-bold">
               <!--link to return to the home page/ clear cards-->
-              <a href="#!" class="text-white">Home</a>
+              <a class="btn btn-primary" href="#home" role="button">Home</a>
             </h6>
           </div>
       </section>
       <hr class="my-5" />
     </div>
     <div class="text-center p-3" id="copyright-link">© 2023 Copyright:
-      <b class="text-white" href="https://github.com/FireCodexs/Foodify">Abby, Ian & Andrei</b>
+      <a class="text-white" href="https://github.com/FireCodexs/Foodify">Abby Egbo, Andrei Grigoras & Ian
+        Millichamp</a>
     </div>
   </footer>
 
