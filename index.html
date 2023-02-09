@@ -10,6 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
   <!--link to style.css sheet allowing local control ov er page styling-->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -18,7 +19,7 @@
   <nav class="navbar navbar-expand-lg topNav" id="home">
     <div class="container-fluid">
       <!--logo image-->
-      <img src="./assets/images/logo.png" class="mr-auto d-block mb-1" style="height:18vh;width:auto;"></img>
+      <img src="./assets/images/logo.png" class="mr-auto d-block mb-1" style="height:8vh;width:auto;"></img>
       <!--div class to push navigation buttons to right of the page-->
       <div class="rightNavText">
          <!--button to allow user to more quickly move to the section of the page where the generated recipe cards are displayed -->
@@ -32,29 +33,6 @@
       </div>
     </div>
   </nav>
-  <!--information section to explain to users how to use the app-->
-  <div class="sectionOne">
-    <!--class to put the text and picture on the same row-->
-    <div class="row">
-      <!--classes to use bootstrap to style the text and picture created by Abby-->
-      <div class="col-6 text-center text-white mt-4 " style="margin-left: 20vh;">
-        <div>
-          <!--text to describe how to use the application , moved to top of the page for more user friendly experience- abby-->
-          <b> Input the name of a food item in your pantry above and Click the SEARCH option to see the full features
-            our
-            Application offers.</b>
-        </div>
-        <div></div>
-        <!--text to help sell the application to the user with a creative flourish of salesmanship - Abby-->
-        <h7> With our easy to use and informative App, you are sure to get all the information you need about consuming
-          healthy calories in one place!
-        </h7>
-      </div>
-      <div class="col-4  mb-4 mt-4 ">
-        <img src="assets/images/Brocolli-Head.jpg" alt="Broccoli Man" id="broccoli">
-      </div>
-    </div>
-  </div>
   <!-- Hero Section to allow the user to input their ingredient choice that will lead to an api response - Andrei-->
   <div class="p-5 text-center bg-image">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
@@ -73,17 +51,75 @@
       </div>
     </div>
   </div>
-   <!--Section to connect to the generation of the recipe cards using javascript - Andrei-->
-   <div id="recipeCards">
+  <!--Section to connect to the generation of the recipe cards using javascript - Andrei-->
+  <div id="recipeCards">
     <div class="row flex-row" id="card-placeholder">
     </div>
   </div>
+  <!--information section to explain to users how to use the app-->
+  <div class="sectionOne">
+    <!--class to put the text and picture on the same row-->
+    <div class="row">
+      <!--classes to use bootstrap to style the text and picture created by Abby-->
+      <div class="col-8 text-center text-white mt-4 " style="margin-left: auto;">
+          <!--text to describe how to use the application , moved to top of the page for more user friendly experience- abby-->
+          <p class="firstText"> Input the name of a food item in your pantry above and Click the SEARCH option to see the full features
+            our<br>
+            <strong>Application offers.</strong><br>
+            <!--text to help sell the application to the user with a creative flourish of salesmanship - Abby-->
+            With our easy to use and informative App, you are sure to get all the information you need about consuming
+            healthy calories in one place!</p>
+      </div>
+      <div class="col-4  mb-4 mt-4 ">
+        <img src="assets/images/jumb2.jpg" alt="cuties" id="cuties">
+      </div>
+    </div>
+  </div>
+
+  <!-- section 2 of the about section - Abby-->
+  <div class="sectionTwo" id="about">
+    <div class="row">
+      <div class="col-3">
+        <!--image of the exercising avocado-->
+        <img src="assets/images/avocado.gif" alt="Dancing Avocado" id="avocado">
+      </div>
+      <!--text to describe the app and its purpose split into multiple header classes to allow bespoke styling-->
+      <div class="col-9 text-start mt-3" style="padding-right: 50px">
+        <h4>The IngrediantFy App helps users discover new recipes, plan their meals, and manage their diets whilst
+          throwing in a little bit of laughter along the way for a healthier lifestyle.</h4>
+        <h5> The App enables users to view healthy for the soul jokes at the touch of a button and to search for
+          recipes
+          based on ingredients that they have in their pantry.</h5>
+      </div>
+      </div>
+      <hr></hr>
+    </div>
+
+
+  <div class="sectionTwo" id="about2">
+    <div class="row">
+      <div class="col-9 text-start mt-3" style="padding-left: 50px;">
+        <!--image of the exercising avocado-->
+        <h5>It allows users to plan their meals, save recipes, check calorie counts and generate shopping lists. </h5>
+        <h5>Users can check their fridges for left over ingredients our App will then enable them to make a meal out
+          of
+          the ingredients in their fridges or kitchen cupboards!</h5>
+        <h6>The Application provides important nutritional information to guide the users</h6>
+      </div>
+      <!--text to describe the app and its purpose split into multiple header classes to allow bespoke styling-->
+      <div class="col-3">
+         <!--image of the exercising banana-->
+        <img src="./assets/images/healthy_food_dribbble.gif" alt="Dancing Banana" id="banana">
+      </div>
+    </div>
+  </div>
+ 
   <!-- Section to display the daily joke -Ian -->
   <div class="jokeSection text-center" id="jokesDay">
     <div class="row">
       <div class="col-2 mt-4 mb-4 quote1">
         <!--image to display a quote for why jokes are good for a persons health-->
-        <img src="./assets/images/quote 1.jpg" alt="joke quote" style="width:15em;height:15em;">
+        <img src="./assets/images/quote 1.jpg" alt="joke quote" style="width:20em;height:20em;">
       </div>
       <div class="col-6 text-center">
         <h3 class=" mt-5">
@@ -97,51 +133,23 @@
       </div>
       <div class="col-2 mt-4 mb-4">
         <!--second image to display a second quote for why jokes are good for a persons health-->
-        <img src="./assets/images/quote 2.jpg" alt="joke quote" style="width:15em;height:15em;">
+        <img src="./assets/images/quote 2.jpg" alt="joke quote" style="width:20em;height:20em;">
       </div>
     </div>
   </div>
-  <!-- section 2 of the about section - Abby-->
-  <div class="sectionTwo" id="about">
-    <div class="row">
-      <div class="col-3">
-        <!--image of the exercising avocado-->
-        <img src="assets/images/avocado.gif" alt="Dancing Avocado" id="avocado">
-      </div>
-      <!--text to describe the app and its purpose split into multiple header classes to allow bespoke styling-->
-      <div class="col-6 text-start mt-3">
-        <h4>The IngrediantFy App helps users discover new recipes, plan their meals, and manage their diets whilst
-          throwing in a little bit of laughter along the way for a healthier lifestyle.</h4>
-        <h5> The App enables users to view healthy for the soul jokes at the touch of a button and to search for
-          recipes
-          based on ingredients that they have in their pantry.</h5>
-        <h5>It allows users to plan their meals, save recipes, check calorie counts and generate shopping lists. </h5>
-        <h5>Users can check their fridges for left over ingredients our App will then enable them to make a meal out
-          of
-          the ingredients in their fridges or kitchen cupboards!</h5>
-        <h6>The Application provides important nutritional information to guide the users</h6>
-      </div>
-      <div class="col-3">
-         <!--image of the exercising banana-->
-        <img src="./assets/images/healthy_food_dribbble.gif" alt="Dancing Banana" id="banana">
-      </div>
-    </div>
-  </div>
- 
+
  <!--footer section to include two buttons - one for the search history and one  to take a user back to the top of the page-->
   <footer class="text-center text-white" style="background-color: #3F51B5">
     <div class="container">
       <section>
         <div class="row text-center d-flex justify-content-center pt-5">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <!--button to show the search history modal-->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchHistoryModal">
               <h6 class="text-uppercase font-weight-bold"></h6>Search History </h6>
             </button>
           </div>
-          <!--application brand logo-->
-          <img src="./assets/images/logo.png" class="mr-auto d-block mb-1" style="height:18vh;width:auto;"></img>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <h6 class="text-uppercase font-weight-bold">
               <!--link to return to the top of the home page-->
               <a class="btn btn-primary" href="#home" role="button">Home</a>
