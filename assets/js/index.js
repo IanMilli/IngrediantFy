@@ -232,6 +232,7 @@ function renderSearchHistory() {
         historyItem.setAttribute("readonly", true);
         historyItem.setAttribute("class", "rounded-2  historyBut bg-primary mt-2 text-center text-light responsive-content");
         historyItem.setAttribute("value", searchHistory[i]);
+         historyItem.setAttribute("id,search");
         historyItem.addEventListener("click", function () {
             getIngredient(historyItem.value);
         })
