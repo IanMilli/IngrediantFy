@@ -12,6 +12,7 @@
 - [Wireframing](#wireframing)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
+- [Presentation](#presentation)
 - [Credits](#credits)
 - [References](#refernces)
 - [License](#license)
@@ -35,8 +36,10 @@ The App also enables users to type in the name a dish. This will then produce fu
 ## Technologies 
 *HTML
 *CSS
+*Figma
 *JavaScript
 *Bootstrap 5.3
+*kanban
 *Spoonocular API
 *Ninja Joke API
 
@@ -93,6 +96,10 @@ the user can click the home button at the bottom of the page to return to the to
 * screenshot to show the wep application once [seach history has been cleared](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/search%20history%20cleared.png).
 * screenshot to show  [a joke](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/joke%201.png)
 *screenshot to show  [a joke once the next joke button is clicked](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/screenshots/another%20joke%20after%20the%20button%20is%20clicked.png)
+
+## Presentation
+
+please see the following link to review our [slide presentation]().
 
 ## Credits
 
