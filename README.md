@@ -45,7 +45,7 @@ The App also enables users to type in the name a dish. This will then produce fu
 
 ## Links
 
-To access the finished application please use the following link: [Foodify App](https://ianmilli.github.io/IngrediantFy/).
+To access the finished application please use the following link: [IngrediantFy App](https://ianmilli.github.io/IngrediantFy/).
 
 To view the code repository for the deployed application please use the following link: [Github Repository](https://github.com/IanMilli/IngrediantFy).
 
@@ -99,7 +99,7 @@ the user can click the home button at the bottom of the page to return to the to
 
 ## Presentation
 
-please see the following link to review our [slide presentation]().
+please see the following link to review our [slide presentation](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/presentation/Project%201%20presentation%20(1).odp).
 
 ## Credits
 
