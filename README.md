@@ -99,7 +99,7 @@ the user can click the home button at the bottom of the page to return to the to
 
 ## Presentation
 
-please see the following link to review our [slide presentation](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/presentation/Project%201%20presentation%20(1).odp).
+please click the following link and the click raw to download our [slide presentation](https://github.com/IanMilli/IngrediantFy/blob/main/assets/images/presentation/Project%201%20presentation%20(1).odp).
 
 ## Credits
 
