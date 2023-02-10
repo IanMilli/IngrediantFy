@@ -235,6 +235,8 @@ function renderSearchHistory() {
     historyItem.setAttribute("value", searchHistory[i]);
     historyItem.addEventListener("click", function () {
       getIngredient(historyItem.value);
+      //this clears the old input - andrei
+  cardArea.innerHTML = "";
     });
     historyEl.append(historyItem);
   }
