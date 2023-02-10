@@ -204,40 +204,40 @@ function joke() {
 //code added by Ian
 /* create a event listener for when the user clicks on the search  button - event listener created by Andrei, moved here by Ian*/
 searchButton.addEventListener("click", function (event) {
-//this clears the old input - andrei
-         cardArea.innerHTML = ""
-        event.preventDefault();
-    let searchTerm = ingredientEl.value;
-    getIngredient(searchTerm);
-    searchHistory.push(searchTerm);
-    localStorage.setItem("search", JSON.stringify(searchHistory));
-    renderSearchHistory();
-})
-
+  //this clears the old input - andrei
+  cardArea.innerHTML = "";
+  event.preventDefault();
+  let searchTerm = ingredientEl.value;
+  getIngredient(searchTerm);
+  searchHistory.push(searchTerm);
+  localStorage.setItem("search", JSON.stringify(searchHistory));
+  renderSearchHistory();
+});
 /* create an event listener for when the user clicks on the clear search history button*/
 clearEl.addEventListener("click", function () {
-    localStorage.clear();
-    searchHistory = [];
-    renderSearchHistory();
-    /**use window.location.reload to reset the page and ensure the page knows local storage is cleared */
-    window.location.reload();
-    }
-)
+  localStorage.clear();
+  searchHistory = [];
+  renderSearchHistory();
+  /**use window.location.reload to reset the page and ensure the page knows local storage is cleared */
+  window.location.reload();
+});
 /** create function to render the search history */
 function renderSearchHistory() {
-    historyEl.innerHTML = "";
-    for (let i = 0; i < searchHistory.length; i++) {
-        const historyItem = document.createElement("input");
-        historyItem.setAttribute("type", "button");
-        historyItem.setAttribute("readonly", true);
-        historyItem.setAttribute("class", "rounded-2  historyBut bg-primary mt-2 text-center text-light responsive-content");
-        historyItem.setAttribute("value", searchHistory[i]);
-         historyItem.setAttribute("id,search");
-        historyItem.addEventListener("click", function () {
-            getIngredient(historyItem.value);
-        })
-        historyEl.append(historyItem);
-    }
+  historyEl.innerHTML = "";
+  for (let i = 0; i < searchHistory.length; i++) {
+    const historyItem = document.createElement("input");
+    historyItem.setAttribute("type", "button");
+    historyItem.setAttribute("readonly", true);
+    historyItem.setAttribute(
+      "class",
+      "rounded-2  historyBut bg-primary mt-2 text-center text-light responsive-content"
+    );
+    historyItem.setAttribute("value", searchHistory[i]);
+    historyItem.addEventListener("click", function () {
+      getIngredient(historyItem.value);
+    });
+    historyEl.append(historyItem);
+  }
 }
 //listerner event to allow user to view multiple jokes without needing to refresh the page
 nextJokeEl.addEventListener("click", function (event) {
