@@ -55,7 +55,7 @@ function getIngredient() {
           <section class="mx-auto my-5" style="max-width: 23rem; ">
           <div class="card">
           <div class="bg-image-card hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="${data.results[i].image}" class="rounded mx-auto d-block" />
+          <img src="${data.results[i].image}" class="rounded mx-auto d-block" >
           </div>
           <div class="card-body">
           <h5 class="card-title font-weight-bold"><a>${
